@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Update Monitoring page</title>
+
+    <link rel="stylesheet" href="../CSS/update.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  </head>
+  <body>
+     <!-- navbar start -->
+     <div class="navbar">
+      <div class="navbar_logo">
+          <div class="navbar_logo_image"></div>
+          <div class="navbar_logo_title">WaterGuard</div>
+      </div>
+
+      <div class="navbar_nav">
+          <a href="">Home</a>
+          <a href="">Education</a>
+          <a href="">Review</a>
+          <a href="">Monitoring</a>
+      </div>
+
+      <div class="navbar_search">
+          <div class="navbar_search_image"></div>
+          <input type="text" class="navbar_search_input" placeholder="Search for anything">
+      </div>
+
+  </div>
+  <!-- navbar end -->
+
+    <main>
+      <div class="update_monitoring_container">
+        <div class="update_monitoring_left_container">
+          <div class="location">
+            Papanggo Tanjung Priok, North Jakarta City, Jakarta
+            <div class="logo location_index"></div>
+          </div>
+
+          <div class="current_description_container">
+            <div class="current_description_title">Current Information:</div>
+
+            <div class="current_description_verified">
+              <div class="last_update_time">Last Update In:</div>
+              <div class="IKA_score"></div>
+              <div class="IKA_category"></div>
+              <div class="condition_description_title">Description:</div>
+              <div class="condition_description"></div>
+            </div>
+
+            <div class="current_description_unverified">
+              <div class="last_update_time">Last Update In:</div>
+              <div class="reported_by"></div>
+              <div class="water_quality"></div>
+              <div class="condition_description_title">Description:</div>
+              <div class="condition_description"></div>
+            </div>
+
+            <div class="current_description_none">no data yet</div>
+          </div>
+
+          <div class="input_container">
+            <div class="input_title">Full Name</div>
+            <input type="text" placeholder="Enter full name" id="full_name"/>
+            <div class="error_message" id="full_name_error"></div>
+          </div>
+
+          <div class="input_container">
+            <div class="input_title">Phone Number</div>
+            <input type="number" placeholder="Enter phone number" id="phone_number" />
+            <div class="error_message" id="phone_number_error"></div>
+          </div>
+
+          <div class="input_container">
+            <div class="input_title">Email Address</div>
+            <input type="text" placeholder="Enter email address" id="email_address" />
+            <div class="error_message" id="email_address_error"></div>
+          </div>
+
+          <div class="input_container">
+            <div class="input_title">Update Detail</div>
+            <textarea
+              name=""
+              id="update_detail"
+              placeholder="Enter update detail (minimum 100 word)"
+            ></textarea>
+            <div class="error_message" id="update_detail_error"></div>
+          </div>
+
+          <div class="input_container">
+            <div class="input_title">Rate Condition</div>
+            <input type="text" placeholder="Enter rate condition (classify based on rate condition indicator above)" id="rate_condition" />
+            <div class="error_message" id="rate_condition_error"></div>
+          </div>
+        </div>
+
+        <div class="update_monitoring_right_container">
+          <div class="report_time_container">
+            Report Time:
+            <div id="reporting_time">23/05/2023 00:00</div>
+          </div>
+          <div class="update_monitoring_map_container" id="mapid"></div>
+          <div class="monitoring_index_container">
+            <div class="index_title">Rate Condition</div>
+            <div class="index_color_container">
+              <div class="index">
+                <div class="logo logo_1"></div>
+                Water Quality <span>Good</span>
+              </div>
+              <div class="index">
+                <div class="logo logo_2"></div>
+                Water Quality <span>Quite Good</span>
+              </div>
+              <div class="index">
+                <div class="logo logo_3"></div>
+                Water Quality <span>Lightly Polluted</span>
+              </div>
+              <div class="index">
+                <div class="logo logo_4"></div>
+                Water Quality <span>Moderately Polluted</span>
+              </div>
+              <div class="index">
+                <div class="logo logo_5"></div>
+                Water Quality <span>Heavily Polluted</span>
+              </div>
+            </div>
+            <div class="line"></div>
+            <div class="index_type_container">
+              <div class="type">
+                <div class="logo logo_verified"></div>
+                Water Quality <span>Verified</span> by Profesionals
+              </div>
+              <div class="type">
+                <div class="logo logo_unverified"></div>
+                Water Quality <span>Unverified</span> by Profesionals
+              </div>
+            </div>
+          </div>
+          <div class="button_container">
+            <div class="cancel_update_button">Cancel Update</div>
+            <div class="report_update_button" onclick="validateReport()">Report Update</div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- footer start -->
+    <footer>
+      <div class="footer_container">
+          <div class="reach_us_container">
+              <div class="reach_us_title">Reach Us</div>
+              <div class="phone_container">
+                  <div class="phone_logo"></div>
+                  <a href="">021 – 2928 5598</a>
+              </div>
+              <div class="email_container">
+                  <div class="email_logo"></div>
+                  <a href="">WaterGuard@gmail.com</a>
+              </div>
+              <div class="location_container">
+                  <div class="location_logo"></div>
+                  <a href="">BINUS @Bekasi Jalan Lingkar Boulevar Blok WA No.1 <br>Kecamatan Medan Satria, <br> Bekasi, 17142</a>
+              </div>
+          </div>
+
+          <div class="company_container">
+              <div class="company_title">Company</div>
+              <div class="footer_content">
+                  <a href="">Home</a>
+                  <a href="">Education</a>
+                  <a href="">Review</a>
+                  <a href="">Monitoring</a>
+              </div>
+          </div>
+
+          <div class="legal_container">
+              <div class="legal_title">Legal</div>
+              <div class="footer_content">
+                  <a href="">Privacy Policy</a>
+                  <a href="">Terms & Services</a>
+                  <a href="">Terms of Use</a>
+                  <a href="">Refund Policy</a>
+              </div>
+          </div>
+
+          <div class="subscribe_container">
+              <div class="subscribe_title">Join Our Community</div>
+              <div class="subscribe_input">
+                  <input type="text" placeholder="Your email address">
+                  <div class="subscribe_button">Subscribe</div>
+              </div>
+              <div class="subscribe_text">* Will Send you weekly updates of water quality arround you</div>
+          </div>
+      </div>
+  </footer>
+    <!-- footer end -->
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="../JS/update.js"></script>
+  </body>
+</html>
