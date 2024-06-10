@@ -71,7 +71,7 @@ body {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url(../image/image/image-background/flg_logo14318\ 2.png);
+    background-image: url(../ASSET/image-background/flg_logo14318\ 2.png);
 }
 
 .navbar_logo_title {
@@ -116,7 +116,7 @@ body {
 }
 
 .navbar_search_image {
-    background-image: url(../image/image/searchbar.png);
+    background-image: url(../ASSET/image/image-logo/search.png);
     width: 20px;
     height: 20px;
     background-size: contain;
@@ -148,7 +148,7 @@ body {
     width: 100%;
     display: flex;
     align-items: center;
-    background-image: url('/image/image/image-background/view-crystal-clear-water.jpg');
+    background-image: url('../ASSET/image-background/view-crystal-clear-water.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -236,7 +236,7 @@ body {
     margin-top: 100px;
     margin-left: 100px;
     margin-right: 100px;
-    border-radius: 50px;
+    border-radius: 40px;
     background-color: #ffffffc8;
     display: flex;
     flex-direction: column;
@@ -255,7 +255,6 @@ body {
     padding-right: 2rem;
     height: 190px;
     background-color: #ffffff;
-    margin-top: 20px;
 }
 
 /* content 2 bagaian tengah */
@@ -948,6 +947,7 @@ summary {
     margin: auto;
     flex-wrap: wrap;
     padding-bottom: 1rem;
+    color: #fff;
     background-color: var(--color-blue-main);
     border-radius: 10px 10px;
 }
