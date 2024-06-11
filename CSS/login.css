@@ -48,7 +48,7 @@ body, html {
 
 body {
     /* Add the background property to the body element */
-    background: url('./transparent-flowing-environment-nature-clear.jpg');
+    background: url('../ASSET/image/image-background/view-transparent-crystal-water.jpg');
     background-size: cover;
     background-position: center;
 }
