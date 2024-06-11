@@ -71,7 +71,7 @@ body {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url('../ASSET/image-background/flg_logo14318\ 2.png');
+    background-image: url('../ASSET/image/image-logo/waterGuard.png');
 }
 
 .navbar_logo_title {
@@ -700,7 +700,7 @@ body {
     width: 100%;
     flex-direction: column;
     align-items: center;
-    background-image: url("../ASSET/image-background/woman-looking-through-binoculars.jpg");
+    background-image: url("../ASSET/image/image-background/woman-looking-through-binoculars.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
