@@ -71,7 +71,7 @@ body {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url(../ASSET/image-background/flg_logo14318\ 2.png);
+    background-image: url('../ASSET/image-background/flg_logo14318\ 2.png');
 }
 
 .navbar_logo_title {
@@ -116,7 +116,7 @@ body {
 }
 
 .navbar_search_image {
-    background-image: url(../ASSET/image/image-logo/search.png);
+    background-image: url('../ASSET/image/image-logo/search.png');
     width: 20px;
     height: 20px;
     background-size: contain;
