@@ -307,7 +307,6 @@ body::-webkit-scrollbar {
 .paragraph_4
 {
   box-shadow: 1px 2px rgb(54, 54, 54);
-  padding: 10px;
   border: 1px black solid;
   border-radius: 20px;
   display:flex;
