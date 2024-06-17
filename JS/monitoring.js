@@ -240,6 +240,7 @@ var reporterNameUpdate = document.getElementById("reporter_name_input");
 var monitoringButton = document.querySelector(".monitoring_form_index_button");
 var reportUpdateButton = document.querySelectorAll(".report_update_button");
 var noDataLocation = document.querySelector(".location_no_data");
+const activateError = document.querySelector(".error_message");
 
 var locationNowlat = -6.2197;
 var locationNowlng = 106.9998;
@@ -247,22 +248,20 @@ var locationNowlng = 106.9998;
 // search button
 monitoringButton.addEventListener("click", function () {
   var addressInput = document.getElementById("address_choosed").value;
-  const activateError = document.querySelector(".error_message");
   const monitoringError = document.getElementById("monitoring_error");
   const alertMessage = ' <div class="alert"></div> ';
 
   if (!addressInput) {
     monitoringError.innerHTML = alertMessage + "Cannot be empty";
-    activateError.classList.add("active")
+    activateError.classList.add("active");
     errorFound = true;
-  }
-  else{
-    activateError.classList.remove("active")
+  } else {
+    activateError.classList.remove("active");
   }
 
   if (addressInput.trim() !== "") {
     pinPoint.classList.remove("active");
-    inputBackground.classList.add("active");
+    inputBackground.classList.remove("active");
     for (let i = 0; i < locations.length; i++) {
       if (addressInput === locations[i].name) {
         console.log(locations[i].name);
@@ -281,7 +280,7 @@ monitoringButton.addEventListener("click", function () {
             locations[i].name +
             '<div id="location_logo"><img src="' +
             locations[i].iconUrl +
-            '" width="30px" height="30px" alt=""></img></div>';
+            '" ></img></div>';
 
           addClickEventToButtons(locations[i]);
         } else if (locations[i].status == "unverified") {
@@ -297,9 +296,9 @@ monitoringButton.addEventListener("click", function () {
           waterQualityDescription.innerHTML = locations[i].description;
           locationUpdate.innerHTML =
             locations[i].name +
-            '<div class="location_logo"><img src="' +
+            '<div id="location_logo"><img src="' +
             locations[i].iconUrl +
-            '" width="30px" height="30px" alt=""></img></div>';
+            '" ></img></div>';
 
           addClickEventToButtons(locations[i]);
         }
@@ -364,12 +363,14 @@ locations.forEach(function (location) {
   marker.on("click", function (e) {
     pinPoint.innerHTML = location.name;
     pinPoint.classList.add("active");
-    inputBackground.classList.remove("active");
+    inputBackground.classList.add("active");
+    activateError.classList.remove("active");
 
     if (location.status == "verified") {
       pastReviews.classList.add("active");
       verified.classList.add("active");
       unverified.classList.remove("active");
+      searchNoData.classList.remove("active");
 
       scoreIka.innerHTML = location.ika_score;
       updateTime.innerHTML = location.lastUpdate;
@@ -379,13 +380,14 @@ locations.forEach(function (location) {
         location.name +
         '<div id="location_logo"><img src="' +
         location.iconUrl +
-        '" width="30px" height="30px" alt=""></img></div>';
+        '" ></img></div>';
 
       addClickEventToButtons(location);
     } else {
       pastReviews.classList.add("active");
       unverified.classList.add("active");
       verified.classList.remove("active");
+      searchNoData.classList.remove("active");
 
       reporterNameUpdate.innerHTML = location.reporter_name;
       locationAddress.innerHTML = location.name;
@@ -393,9 +395,9 @@ locations.forEach(function (location) {
       waterQualityDescription.innerHTML = location.description;
       locationUpdate.innerHTML =
         location.name +
-        '<div class="location_logo"><img src="' +
+        '<div id="location_logo"><img src="' +
         location.iconUrl +
-        '" width="30px" height="30px" alt=""></img></div>';
+        '" ></img></div>';
 
       addClickEventToButtons(location);
     }
@@ -429,6 +431,6 @@ downloadIkaCalculation.addEventListener("click", function () {
 });
 
 var pastRatingButton = document.querySelector(".past_rating_button");
-pastRatingButton.addEventListener("click", function(){
-  window.location.href = "../HTML/review.html"
-})
+pastRatingButton.addEventListener("click", function () {
+  window.location.href = "../HTML/review.html";
+});
