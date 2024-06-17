@@ -988,7 +988,6 @@ details[open] div {
 
 /* footer start */
 footer {
-    /* height: 479px; */
     height: max-content;
     width: 100%;
     background-color: var(--color-blue-footer);
@@ -1000,7 +999,7 @@ footer {
     justify-content: center;
     padding-top: 150px;
     padding-bottom: 100px;
-
+    margin-top: 100px;
 }
 
 footer a {
@@ -1009,14 +1008,17 @@ footer a {
     font-weight: lighter;
 }
 
+footer a:hover{
+    color: var(--color-white-3);
+}
+
 .footer_container {
     display: flex;
     gap: 50px;
     padding: 40px;
-    /* border-top: 2px solid var(--color-white-1); */
 }
 
-.footer_line {
+.footer_line{
     width: 70%;
     height: 2px;
     background-color: var(--color-white-1);
@@ -1078,18 +1080,18 @@ footer a {
 }
 
 .subscribe_button:hover {
-    background-color: var(--color-white-3);
+    background-color: var(--color-blue-2);
 }
 
 .subscribe_button:active {
-    background-color: var(--color-white-2);
+    background-color: var(--color-white-3);
     color: var(--color-blue-main);
 }
 
 .subscribe_input input {
     width: 100%;
     padding-left: 5px;
-    background-color: var(--color-white-2);
+    background-color: var(--color-white-1);
     border: 2px solid var(--color-white-2);
     border-right: none;
 }
@@ -1130,7 +1132,7 @@ footer a {
     gap: 10px;
 }
 
-.location_logo {
+.location_logo{
     background-image: url("../ASSET/image/image-logo/location.png");
     height: 20px;
     width: 20px;
@@ -1159,5 +1161,4 @@ footer a {
     gap: 20px;
     padding-left: 10px;
 }
-
 /* footer end */
