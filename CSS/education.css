@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 :root {
     --color-white-1: #ffffff;
     --color-white-2: #eaeaea;
@@ -27,6 +28,8 @@
     outline: none;
     border: none;
     text-decoration: none;
+    font-family: "Poppins", sans-serif;
+
 }
 .navbar {
     background-color: var(--color-white-1);
@@ -35,6 +38,7 @@
     z-index: 1000;
     height: 84px;
     width: 100%;
+    font-size: 18px;
 }
 body::-webkit-scrollbar {
     width: 0;
@@ -127,18 +131,16 @@ body::-webkit-scrollbar {
 /* content start */
 .content 
 {
-  
   position: relative;
   text-align: center;
   color: white;
 }
 
 .content img
-{ 
+{
   width: 100%;
   height: 605px;
 }
-
 .Title
 {
   position: absolute;
@@ -204,7 +206,7 @@ body::-webkit-scrollbar {
 .paragraph
 {
   box-shadow: 1px 2px rgb(54, 54, 54);
-  padding: 10px;
+  padding: 20px;
   border: 1px black solid;
   border-radius: 20px;
   display:flex;
@@ -218,8 +220,14 @@ body::-webkit-scrollbar {
 
 .paragraph img
 {
-  width: auto;
-  height: auto;
+  width: 200px;
+  height: 75px;
+  border-radius: 20px;
+}
+
+.paragraph p
+{
+  gap: 10px;
 }
 
 .article_2
@@ -242,14 +250,14 @@ body::-webkit-scrollbar {
 .paragraph2
 {
   box-shadow: 1px 2px rgb(54, 54, 54);
-  padding: 10px;
+  padding: 20px;
   border: 1px black solid;
   border-radius: 20px;
   display:flex;
   flex-direction: column;
   gap: 20px;
   font-size: 16px;
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
 }
 
 .paragraph2 p 
@@ -271,14 +279,15 @@ body::-webkit-scrollbar {
 .paragraph_3
 {
   box-shadow: 1px 2px rgb(54, 54, 54);
-  padding: 10px;
+  padding: 20px;
   border: 1px black solid;
   border-radius: 20px;
   display:flex;
   flex-direction: column;
   gap: 20px;
   font-size: 16px;
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
+ 
 }
 
 .foto 
@@ -298,45 +307,33 @@ body::-webkit-scrollbar {
   display: flex;
   justify-content: space-between;
   align-items: start;
-  gap: 50px;
   padding: 60px 40px;
-
-
+  gap: 50px;
 }
 
-.paragraph_4
+
+.paragraph4
 {
   box-shadow: 1px 2px rgb(54, 54, 54);
+  padding: 20px;
   border: 1px black solid;
   border-radius: 20px;
   display:flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 20px;
   font-size: 16px;
-  font-family: "Poppins";
-  width: 610px;
-  overflow: visible;
-  overflow-wrap: normal;
-  text-wrap: wrap;
+  font-family: "Poppins", sans-serif;
 }
 
-.gambar 
+.paragraph4 p
 {
-  width: 762px;
-  height: 508px;
-  border-radius: 20px;
-}
-
-.paragraph_4 p 
-{
-  flex-direction: column;
+  gap: 10px;
 }
 
 /* content end */
 
 /* footer start */
 footer {
-  /* height: 479px; */
   height: max-content;
   width: 100%;
   background-color: var(--color-blue-footer);
@@ -355,11 +352,13 @@ footer a {
   font-size: 16px;
   font-weight: lighter;
 }
+footer a:hover{
+  color: var(--color-white-3);
+}
 .footer_container {
   display: flex;
   gap: 50px;
   padding: 40px;
-  /* border-top: 2px solid var(--color-white-1); */
 }
 .footer_line{
   width: 70%;
@@ -414,16 +413,16 @@ footer a {
   cursor: pointer;
 }
 .subscribe_button:hover {
-  background-color: var(--color-white-3);
+  background-color: var(--color-blue-2);
 }
 .subscribe_button:active {
-  background-color: var(--color-white-2);
+  background-color: var(--color-white-3);
   color: var(--color-blue-main);
 }
 .subscribe_input input {
   width: 100%;
   padding-left: 5px;
-  background-color: var(--color-white-2);
+  background-color: var(--color-white-1);
   border: 2px solid var(--color-white-2);
   border-right: none;
 }
@@ -457,7 +456,7 @@ footer a {
   display: flex;
   gap: 10px;
 }
-.location_logo {
+.location_logo{
   background-image: url("../ASSET/image/image-logo/location.png");
   height: 20px;
   width: 20px;
