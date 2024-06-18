@@ -245,7 +245,7 @@ body {
     padding: 1rem;
     max-width: 410px;
     width: 500px;
-    height: 600px;
+    height: 500px;
     left: 20px;
     margin-top: 100px;
     margin-left: 100px;
@@ -329,7 +329,7 @@ body {
 /* Untuk index 37*/
 .box {
     position: relative;
-    top: 40px;
+    top: 30px;
     left: 300px;
     width: 100px;
     height: 100px;
