@@ -461,7 +461,6 @@ body {
 .quality {
     padding: 10rem 6% 1.4rem;
     width: 100%;
-    background-color: #ffffff;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -916,7 +915,6 @@ body {
     padding: 5rem 5% 10rem;
     width: 100%;
     position: relative;
-    background-color: var(--color-blue-1);
 }
 
 .container {
