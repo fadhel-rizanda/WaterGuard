@@ -103,7 +103,7 @@
   box-shadow: 0.1px 0.1px 1px rgb(0, 0, 0, 0.25);
 }
 .navbar_search_image {
-  background-image: url(../ASSET/Vector.png);
+  background-image: url(../ASSET/search.png);
   width: 20px;
   height: 20px;
   background-size: contain;
