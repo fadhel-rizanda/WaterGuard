@@ -147,7 +147,7 @@ body::-webkit-scrollbar {
   top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-family: "Inter";
+  font-family: "Poppins", sans-serif;
   font-weight: bold;
   font-size: 40px;
 }
@@ -158,7 +158,7 @@ body::-webkit-scrollbar {
   top: 38%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-family: "Inter";
+  font-family: "Poppins", sans-serif;
   font-weight: lighter;
   font-size: 40px;
 }
@@ -169,7 +169,7 @@ body::-webkit-scrollbar {
   bottom: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-family: "Inter";
+  font-family: "Poppins", sans-serif;
   font-weight: normal;
   font-size: 40px;
 }
@@ -180,7 +180,7 @@ body::-webkit-scrollbar {
   bottom: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-family: "Inter";
+  font-family: "Poppins", sans-serif;
   font-weight: normal;
   font-size: 20px;
 }
