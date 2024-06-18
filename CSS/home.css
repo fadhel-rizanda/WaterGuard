@@ -927,10 +927,6 @@ body {
 
 }
 
-.container:hover{
-    color: var(--color-blue-1);
-}
-
 .container h1 {
     color: #000000;
     text-align: center;
@@ -961,6 +957,10 @@ summary {
     color: #fff;
     background-color: var(--color-blue-main);
     border-radius: 10px 10px;
+}
+
+summary:hover{
+    color: #000000;
 }
 
 .container summary {
