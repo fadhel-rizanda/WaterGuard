@@ -215,8 +215,9 @@ body {
     display: inline-block;
     padding: 1rem 3rem;
     font-size: 16px;
+    font: arial;
     color: #fff;
-    background-color: #3751FE;
+    background-color: var(--color-blue-main);
     border-radius: 10px;
     box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
 }
@@ -227,7 +228,8 @@ body {
     display: inline-block;
     padding: 1rem 3rem;
     font-size: 16px;
-    color: #3751FE;
+    fonr: arial;
+    color: var(--color-blue-main);
     background-color: #ffffff;
     border-radius: 10px;
     box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
