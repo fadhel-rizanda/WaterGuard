@@ -922,13 +922,13 @@ body {
     background-color: var(--color-blue-1);
 }
 
-.faq:hover {
-    color: #312d2d4f;
-}
-
 .container {
     padding-bottom: 1rem;
 
+}
+
+.container:hover{
+    color: var(--color-blue-1);
 }
 
 .container h1 {
