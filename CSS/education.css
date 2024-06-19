@@ -254,7 +254,7 @@ body::-webkit-scrollbar
   width: 50%;
   height: 508px;
   border-radius: 20px;
-  margin-right: 20%;
+  gap: 20px;
 }
 
 .paragraph2
