@@ -197,10 +197,10 @@ body::-webkit-scrollbar {
     justify-content: center;
     align-items: center;
     
-    background-size: contain;
+    /* background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url(../ASSET/hero/statistik.png);
+    background-image: url(../ASSET/hero/statistik.png); */
 }
 
 .reviews {
