@@ -252,7 +252,7 @@ body::-webkit-scrollbar
 .img 
 {
   width: 50%;
-  height: 508px;
+  height: 50%;
   border-radius: 20px;
   gap: 20px;
 }
