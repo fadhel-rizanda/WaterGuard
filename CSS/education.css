@@ -65,7 +65,7 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url(../ASSET/waterGuard.png);
+  background-image: url(../ASSET/image/image-logo/waterGuard.png);
 }
 .navbar_logo_title {
   font-weight: 100;
@@ -103,7 +103,7 @@
   box-shadow: 0.1px 0.1px 1px rgb(0, 0, 0, 0.25);
 }
 .navbar_search_image {
-  background-image: url(../ASSET/search.png);
+  background-image: url(../ASSET/image/image-logo/search.png);
   width: 20px;
   height: 20px;
   background-size: contain;
@@ -120,10 +120,11 @@
   box-shadow: 1px 1px 10px rgb(0, 0, 0, 0.25);
 }
 /* navbar end */
-/* body::-webkit-scrollbar {
+body::-webkit-scrollbar 
+{ 
   width: 0;
   height: 0;
-} */
+} 
 
 /* content start */
 .content 
@@ -189,15 +190,15 @@
   align-items: start;
   gap: 20px;
   padding: 20px 40px;
-
 }
 
 
 .image1 
 {
-  width: 762px;
-  height: 508px;
+  width: 50%;
+  height: 50%;
   border-radius: 20px;
+  gap: 20px;
 }
 
 .paragraph
@@ -212,19 +213,30 @@
   font-size: 16px;
   font-family: "Poppins";
   max-width: fit-content;
+  width: 50%;
 
 }
 
 .paragraph img
 {
-  width: 200px;
-  height: 75px;
+  width: auto;
+  height: 100px;
   border-radius: 20px;
 }
 
 .paragraph p
 {
   gap: 10px;
+}
+
+.image_container1 
+{
+  margin-right: 5px;
+  width: 302px;
+  height: 240px;
+  margin-left: 60%;
+  display: flex;
+  padding-top: 50px;
 }
 
 .article_2
@@ -234,14 +246,15 @@
   align-items: start;
   gap: 50px;
   padding: 60px 40px;
-
+  
 }
 
-.article_2 img 
+.img 
 {
-  width: 762px;
+  width: 50%;
   height: 508px;
   border-radius: 20px;
+  margin-right: 20%;
 }
 
 .paragraph2
@@ -255,6 +268,7 @@
   gap: 20px;
   font-size: 16px;
   font-family: "Poppins", sans-serif;
+  width: 50%;
 }
 
 .paragraph2 p 
@@ -262,6 +276,15 @@
   gap: 10px;
 }
 
+.image_container2 
+{
+  
+  width: 302px;
+  height: 240px;
+  display: flex;
+  gap: 50px;
+  margin-top: 100px;
+}
 
 .article_3
 {
@@ -284,12 +307,12 @@
   gap: 20px;
   font-size: 16px;
   font-family: "Poppins", sans-serif;
- 
+  width: 50%;
 }
 
 .foto 
 {
-  width: 762px;
+  width: 50%;
   height: 508px;
   border-radius: 20px;
 }
@@ -299,6 +322,15 @@
   gap: 10px;
 }
 
+.image_container3 
+{
+  margin-right: 5px;
+  width: 302px;
+  height: 300px;
+  margin-left: 65%;
+  display: flex;
+  padding-top: 50px;
+}
 .article_4
 {
   display: flex;
@@ -320,6 +352,7 @@
   gap: 20px;
   font-size: 16px;
   font-family: "Poppins", sans-serif;
+  width: 50%;
 }
 
 .paragraph4 p
