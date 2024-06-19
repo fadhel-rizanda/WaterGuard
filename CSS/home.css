@@ -1,37 +1,36 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
-
 :root {
-    --color-white-1: #ffffff;
-    --color-white-2: #eaeaea;
-    --color-white-3: #cacaca;
-    --color-white-4: #a2a2a2;
-    --color-black-1: black;
+  --color-white-1: #ffffff;
+  --color-white-2: #eaeaea;
+  --color-white-3: #cacaca;
+  --color-white-4: #a2a2a2;
+  --color-black-1: black;
 
-    --color-blue-main: #408EAD;
-    --color-blue-footer: #054654;
+  --color-blue-main: #408ead;
+  --color-blue-footer: #054654;
 
-    --color-blue-1: #D1E9FF;
-    --color-blue-2: #18728F;
-    --color-blue-3: #005673;
-    --color-blue-4: #003D58;
-    --color-blue-5: #00243E;
+  --color-blue-1: #d1e9ff;
+  --color-blue-2: #18728f;
+  --color-blue-3: #005673;
+  --color-blue-4: #003d58;
+  --color-blue-5: #00243e;
 
-    --color-index_rate-1: #000AFF;
-    --color-index_rate-2: #29BEB5;
-    --color-index_rate-3: #61CD0B;
-    --color-index_rate-4: #FFA800;
-    --color-index_rate-5: #FF0000;
+  --color-index_rate-1: #000aff;
+  --color-index_rate-2: #29beb5;
+  --color-index_rate-3: #61cd0b;
+  --color-index_rate-4: #ffa800;
+  --color-index_rate-5: #ff0000;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    outline: none;
-    border: none;
-    text-decoration: none;
-    font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
@@ -41,7 +40,6 @@ body {
     /* align-items: center; */
     justify-content: center;
     background: #353842;
-    font-family: "Poppins", sans-serif;
     background-color: #F0F6FF;
 
 }
