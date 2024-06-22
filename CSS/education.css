@@ -213,7 +213,7 @@ body::-webkit-scrollbar
   font-size: 16px;
   font-family: "Poppins";
   max-width: fit-content;
-  width: 50%;
+  width: 70%;
 
 }
 
@@ -227,6 +227,39 @@ body::-webkit-scrollbar
 .paragraph p
 {
   gap: 10px;
+}
+
+.circs{
+  position: relative;
+  display: flex;
+  justify-content: right;
+  margin-top: 20px;
+  height: 20vh;
+  width: 100%;
+  .circ{
+    position: absolute;
+    width: 9rem;
+    border-radius: 4.5rem;
+    height: 9rem;
+    background-color: rgba(69, 213, 226, 0.5);    
+  }
+  .circ1{
+    position: absolute;
+    right: 8rem;
+    width: 14rem;
+    border-radius: 7rem;
+    height: 14rem;
+    background-color: rgba(69, 213, 226, 0.5);
+  }
+  .circ2{
+    position: absolute;
+    top: 10rem;
+    width: 5rem;
+    border-radius: 2.5rem;
+    height: 5rem;
+    background-color: rgba(69, 213, 226, 0.5);
+
+  }
 }
 
 .image_container1 
@@ -268,7 +301,98 @@ body::-webkit-scrollbar
   gap: 20px;
   font-size: 16px;
   font-family: "Poppins", sans-serif;
-  width: 50%;
+  width: 70%;
+}
+.circs1{
+  position: relative;
+  display: flex;
+  justify-content: left;
+  margin-top: 20px;
+  height: 20vh;
+  width: 100%;
+  .circ{
+    position: absolute;
+    left: 12rem;
+    width: 9rem;
+    border-radius: 4.5rem;
+    height: 9rem;
+    background-color: rgba(69, 213, 226, 0.5);    
+  }
+  .circ1{
+    position: absolute;
+   /* left: 8rem */
+    width: 14rem;
+    border-radius: 7rem;
+    height: 14rem;
+    background-color: rgba(69, 213, 226, 0.5);
+  }
+  .circ12{
+    position: absolute;
+    width: 14rem;
+    top: 8rem;
+    border-radius: 7rem;
+    height: 14rem;
+    background-color: rgba(69, 213, 226, 0.5);
+  }
+  .circ2{
+    position: absolute;
+    top: 10rem;
+    left: 12rem;
+    width: 5rem;
+    border-radius: 2.5rem;
+    height: 5rem;
+    background-color: rgba(69, 213, 226, 0.5);
+
+  }
+}
+.circs2{
+  position: relative;
+  display: flex;
+  justify-content: right;
+  margin-top: 20px;
+  height: 20vh;
+  width: 100%;
+  .circ{
+    position: absolute;
+    width: 9rem;
+    border-radius: 4.5rem;
+    height: 9rem;
+    background-color: rgba(69, 213, 226, 0.5);    
+  }
+  .circ3{
+    position: absolute;
+    width: 9rem;
+    top: 9rem;
+    border-radius: 4.5rem;
+    height: 9rem;
+    background-color: rgba(69, 213, 226, 0.5);    
+  }
+  .circ1{
+    position: absolute;
+    right: 8rem;
+    width: 15rem;
+    border-radius: 8rem;
+    height: 15rem;
+    background-color: rgba(69, 213, 226, 0.5);
+  }
+  .circ2{
+    position: absolute;
+    top: 2rem;
+    width: 5rem;
+    border-radius: 2.5rem;
+    height: 5rem;
+    background-color: rgba(69, 213, 226, 0.5);
+  }
+  .circ12{
+    position: absolute;
+    top: 2rem;
+    right: 12rem;
+    width: 5rem;
+    border-radius: 2.5rem;
+    height: 5rem;
+    background-color: rgba(69, 213, 226, 0.5);
+
+  }
 }
 
 .paragraph2 p 
@@ -307,7 +431,7 @@ body::-webkit-scrollbar
   gap: 20px;
   font-size: 16px;
   font-family: "Poppins", sans-serif;
-  width: 50%;
+  width: 70%;
 }
 
 .foto 
@@ -352,7 +476,7 @@ body::-webkit-scrollbar
   gap: 20px;
   font-size: 16px;
   font-family: "Poppins", sans-serif;
-  width: 50%;
+  width: 70%;
 }
 
 .paragraph4 p
