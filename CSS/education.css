@@ -262,15 +262,6 @@ body::-webkit-scrollbar
   }
 }
 
-.image_container1 
-{
-  margin-right: 5px;
-  width: 302px;
-  height: 240px;
-  margin-left: 60%;
-  display: flex;
-  padding-top: 50px;
-}
 
 .article_2
 {
@@ -400,15 +391,7 @@ body::-webkit-scrollbar
   gap: 10px;
 }
 
-.image_container2 
-{
-  
-  width: 302px;
-  height: 240px;
-  display: flex;
-  gap: 50px;
-  margin-top: 100px;
-}
+
 
 .article_3
 {
@@ -446,15 +429,7 @@ body::-webkit-scrollbar
   gap: 10px;
 }
 
-.image_container3 
-{
-  margin-right: 5px;
-  width: 302px;
-  height: 300px;
-  margin-left: 65%;
-  display: flex;
-  padding-top: 50px;
-}
+
 .article_4
 {
   display: flex;
